@@ -1,5 +1,7 @@
 # REPO ESP — BepInEx 插件
 
+![readme_img](C:\Users\kugua\Desktop\repo_test\repo_esp\readme_img.jpg)
+
 给 REPO（Mono, Unity 2022.3）怪物画 **2D 屏幕方框** + **骨骼点线**。
 绘制走 `Camera.onPostRender` + GL（不依赖 OnGUI），游戏内按 `F6` 开关。
 
