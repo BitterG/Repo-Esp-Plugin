@@ -33,7 +33,6 @@ copy repo_esp\bin\RepoEsp.dll "E:\SteamLibrary\steamapps\common\REPO\BepInEx\plu
 ```
 
 重启游戏。开一局，怪物出现后应该能看到：
-- 左上角青色 + 右上角洋红小方块（插件存活指示）
 - 绿色 2D 方框（紧贴怪物）
 - 黄色骨骼点 + 骨骼连线
 
@@ -43,9 +42,3 @@ copy repo_esp\bin\RepoEsp.dll "E:\SteamLibrary\steamapps\common\REPO\BepInEx\plu
 - 日志位置：`BepInEx\LogOutput.log`，搜索 `[RepoEsp]`
 - 每 5 秒会打一条 `status: draw=... enemies=... renderers=...`
 - 若 `Input` 报错被吞掉，说明游戏启用新版 Input System，F6 不可用——去掉按键开关，默认常开即可
-
-## 下一步进阶
-
-- 敌人枚举换成 `EnemyParent` 的静态/单例列表（dnSpy 里找 `EnemyDirector` 的 enemyList），省掉全场景扫描
-- 加距离/血量显示（`EnemyHealth` 字段）
-- 骨骼按名字白名单只画想要的节点（如 HEAD/BODY/ARM），减少杂乱
